@@ -17,3 +17,22 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/pets',function(){
+
+    echo 'estou na lista de pets';
+});
+
+Route::post('/pets',function(){
+
+    echo 'estou na cadastrando um pets';
+});
+Route::put('/pets',function(){
+
+    echo 'estou atualizando  um pet';
+});
+
+Route::delete('/pets',function(){
+
+    echo 'estou atualizando  um pet';
+});
